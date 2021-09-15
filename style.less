@@ -1,6 +1,5 @@
-body{
-    margin: 0;
-    
+body {
+  margin: 0;
 }
 .header {
   width: 100%;
@@ -9,7 +8,6 @@ body{
   flex-direction: row;
   justify-content: space-between;
   background-color: rgb(89, 89, 223);
-
 }
 .link-block {
   width: 30%;
@@ -18,19 +16,17 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    ;
     list-style-type: none;
     a {
       text-decoration: none;
       color: grey;
-      transition: all .5s ease-in;
+      transition: all 0.5s ease-in;
     }
-    a:hover{
-        color: white;
-        
+    a:hover {
+      color: black;
     }
-    a:active{
-        color: black;
+    a:active {
+      color: white;
     }
   }
 }
@@ -38,5 +34,70 @@ body{
   width: 30px;
 }
 .avatar {
-    padding: 10px 40px 10px 0;
+  padding: 10px 40px 10px 0;
+}
+.section {
+  margin: 0 40px;
+  .name-section-left {
+    text-align: center;
+  }
+  .name-section-rigth {
+    text-align: center;
+  }
+  .username {
+    font-weight: 400;
+    text-align: center;
+  }
+  .section-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .card {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      .block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 1px;
+        .icon-left {
+          width: 90px;
+          height: 90px;
+          padding-right: 10px;
+        }
+        .text-rigth {
+          font-size: small;
+          display: flex;
+          flex-direction: column;
+        }
+        .top-text {
+          display: inline-flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+.title-text {
+}
+.day {
+}
+.text {
+}
+.buttom-left {
+}
+.rigth {
+}
+
+.row {
+}
+.description {
+}
+.medal {
+}
+.date {
 }

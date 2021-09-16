@@ -1,0 +1,147 @@
+@import url(fonts/fonts.css);
+body {
+  margin: 0;
+  font-family: "Inter";
+}
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #5959df;
+}
+.header .link-block {
+  width: 30%;
+}
+.header .link-block .link-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.header .link-block .link-list a {
+  text-decoration: none;
+  color: grey;
+  transition: all 0.5s ease-in;
+}
+.header .link-block .link-list a:hover {
+  color: black;
+}
+.header .link-block .link-list a:active {
+  color: white;
+}
+.icon {
+  width: 30px;
+}
+.avatar {
+  padding: 10px 40px 10px 0;
+}
+.section {
+  margin: 0 40px;
+}
+.section .name-section-left {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+.section .name-section-rigth {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+.section .username {
+  font-weight: 400;
+  text-align: center;
+}
+.section .section-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.section .section-table .card {
+  width: 40%;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+}
+.section .section-table .card .block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 1px;
+}
+.section .section-table .card .block .icon-left {
+  width: 90px;
+  height: 90px;
+  padding-right: 10px;
+}
+.section .section-table .card .block .text-rigth {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+}
+.section .section-table .card .block .text-rigth .title-text {
+  font-weight: bold;
+}
+.section .section-table .card .block .text-rigth .text {
+  font-size: 12px;
+}
+.section .section-table .card .block .top-text {
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 15px;
+  align-items: center;
+}
+.section .section-table .card .block .top-text .day {
+  font-weight: lighter;
+  font-size: 8px;
+}
+.section .section-table .card .buttom-left {
+  background-color: #c4c4cc;
+  border-radius: 2px;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid grey;
+}
+.section .section-table .card .rigth {
+  background-color: white;
+  margin-top: 45px;
+}
+.section .section-table .card .row {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0 0 10px 0;
+  text-align: center;
+}
+.section .section-table .card .row .row-it {
+  width: 60px;
+  align-self: center;
+  padding: 5px 0;
+}
+.section .section-table .card .row .description {
+  font-size: 10px;
+  width: 160px;
+  border: 1px solid grey;
+}
+.section .section-table .card .row .medal {
+  font-weight: bold;
+  display: inline-flex;
+  padding: 0 7px 0 7px;
+}
+.section .section-table .card .row .medal > img {
+  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+}
+.section .section-table .card .row .date {
+  font-size: 10px;
+  width: 160px;
+  border: 1px solid grey;
+}
+.description:nth-child(obb) {
+  border-radius: 10px 100px / 120px;
+}

@@ -1,49 +1,98 @@
 @import url(../home/style.css);
-.tasks_line {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.img{
-    width: 15px;
-    
-}
-.task_block {
-    width: fit-content;
-    height: 100px;
+@color_circle-grey: #9d9d9d;
+@color_circle-green: #068121;
+@color_circle-blue: #6b8fd4;
+@color_circle-pink: #cd0074;
+.conv_line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  .conventional {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid grey;
-    border-radius: 2px;
-    padding: 10px;
-    .block_btn{
-        display: flex;
-    flex-direction: row;
     justify-content: center;
-    border: .5px solid grey;
-    border-radius: 2px;
-    width: 100px;
-    
+    .con_row {
+      display: flex;
+      font-size: 10px;
+      justify-content: flex-end;
+      .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-left: 5px;
+      }
     }
-    
+  }
+  .theme_name {
+    display: inline-flex;
+    align-items: flex-end;
+  }
 }
-.task_name {
+.grey {
+  background-color: @color_circle-grey;
 }
-.task_date {
+.green {
+  background-color: @color_circle-green;
 }
-.task_btn {
-    display: flex;
-    flex-direction: row;
-    font-size: 10px;
-    width: 100%;
-    justify-content: space-around;
-    
+.blue {
+  background-color: @color_circle-blue;
+}
+.pink {
+  background-color: @color_circle-pink;
 }
 
-.img +.tex_icon {
-    padding: 0 10px 0 10px;
-        
-    }
+.tasks_line {
+    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: space-between;
+  
+}
+.img {
+  width: 15px;
+}
+.task_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2px;
+  transition: all 0.8s ease;
+.task_name, .task_date,{
+    padding: 10px;
+}
+  .block_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 0.5px solid white;
+    border-radius: 2px;
+    width: 100px;
+    transition: all 0.5s ease-in;
+  }
+}
+.task_block:hover {
+  box-shadow: 0px 0px 13px 3px rgba(49, 48, 48, 0.53);
+  transition: all 0.8s ease;
+}
+.task_btn {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  width: 100%;
+  justify-content: space-around;
+  transition: all 0.5s ease-in;
+  padding-bottom: 10px;
+}
+.block_btn:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
+.img + .tex_icon {
+  padding: 0 10px 0 10px;
+}
+.title_block{
+    margin-top: 8px;
+}

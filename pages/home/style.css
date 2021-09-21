@@ -153,6 +153,3 @@ body {
   width: 160px;
   border: 1px solid grey;
 }
-.description:nth-child(obb) {
-  border-radius: 10px 100px / 120px;
-}

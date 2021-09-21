@@ -1,0 +1,43 @@
+@import url(../home/style.css);
+@import url(../homework/style.less);
+
+.page-title {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .col {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    .btn {
+        text-align: center;
+        background-color: @color_circle-grey;
+        margin: 0 5px 0 5px;
+      }
+    .ava {
+      margin: 0 auto;
+      width: 150px;
+    }
+    .col-title {
+      text-align: center;
+      background-color: @color_circle-blue;
+    }
+    .form-place {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: space-around;
+        padding: 5px;
+        input{
+            margin: 5px 0 5px 0;
+        }
+      }
+  }
+}
+
+
+
+

@@ -29,9 +29,6 @@ body {
 .header .link-block .link-list a:hover {
   color: black;
 }
-.header .link-block .link-list a:active {
-  color: white;
-}
 .icon {
   width: 30px;
   transition: all 0.5s ease-in-out;
@@ -43,11 +40,11 @@ body {
 .avatar {
   width: 40px;
   margin: 10px 40px 10px 0;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .avatar:hover {
   transform: rotate(360deg) scale(1.5);
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .section {
   margin: 0 40px;
